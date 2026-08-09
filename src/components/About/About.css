@@ -348,48 +348,227 @@
 
 }
 
-/*==============================
-      RESPONSIVE
-==============================*/
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
 
-@media(max-width:992px){
+/* ---------- TABLET ---------- */
 
-.about-container{
+@media (max-width: 992px) {
 
-flex-direction:column;
+  .about {
+    padding: 90px 6%;
+  }
+
+  .about-title {
+    margin-bottom: 55px;
+  }
+
+  .about-title h2 {
+    font-size: 46px;
+  }
+
+  .about-title p {
+    font-size: 16px;
+    max-width: 600px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  /* Image */
+
+  .about-image {
+    width: 100%;
+    flex: none;
+    padding-top: 10px;
+  }
+
+  .image-frame {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .image-frame img {
+    height: 520px;
+  }
+
+  /* Content */
+
+  .about-content {
+    width: 100%;
+    padding-left: 35px;
+    padding-top: 30px;
+  }
+
+  .about-content::before {
+    top: 30px;
+    height: 100px;
+  }
+
+  .about-content h3 {
+    font-size: 46px;
+  }
+
+  .about-content p {
+    max-width: 100%;
+    font-size: 16px;
+  }
 
 }
 
-.about-image{
 
-width:100%;
-max-width:420px;
+/* ---------- MOBILE ---------- */
 
-}
+@media (max-width: 576px) {
 
-.about-content{
+  .about {
+    padding: 75px 5%;
+  }
 
-text-align:center;
+  /* Title */
 
-}
+  .about-title {
+    margin-bottom: 45px;
+  }
 
-.image-frame{
+  .about-title span {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
 
-    max-width:320px;
+  .about-title h2 {
+    font-size: 38px;
+    line-height: 1.15;
+    margin: 12px 0;
+  }
 
-}
+  .about-title p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
 
-.image-frame img{
 
-    height:420px;
+  /* Container */
 
-}
+  .about-container {
+    flex-direction: column;
+    gap: 55px;
+  }
 
-.floating-badge{
 
-    right:-10px;
-    bottom:20px;
+  /* Image */
 
-}
+  .about-image {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .image-frame {
+    width: 90%;
+    max-width: 340px;
+  }
+
+  .image-frame::before {
+    top: 12px;
+    left: 12px;
+    border-radius: 18px;
+  }
+
+  .image-frame img {
+    height: 440px;
+    border-radius: 18px;
+  }
+
+
+  /* Floating badge */
+
+  .floating-badge {
+    width: 82px;
+    height: 82px;
+    right: -15px;
+    bottom: -20px;
+    border-width: 3px;
+  }
+
+  .floating-badge h3 {
+    font-size: 23px;
+  }
+
+  .floating-badge span {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+
+  /* Content */
+
+  .about-content {
+    width: 100%;
+    padding-left: 25px;
+    padding-top: 25px;
+  }
+
+  .about-content::before {
+    left: 0;
+    top: 25px;
+    width: 3px;
+    height: 85px;
+  }
+
+  .about-tag {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .about-content h3 {
+    font-size: 38px;
+    line-height: 1.15;
+    margin: 15px 0;
+  }
+
+  .about-content p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+
+  /* Features */
+
+  .about-features {
+    margin: 35px 0;
+    gap: 20px;
+  }
+
+  .feature-card {
+    gap: 13px;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .feature-card h4 {
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+
+  .feature-card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+
+  /* Button */
+
+  .about-btn {
+    padding: 14px 28px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 
 }

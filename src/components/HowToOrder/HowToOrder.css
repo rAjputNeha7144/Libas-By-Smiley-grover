@@ -2,49 +2,49 @@
         HOW TO ORDER
 =====================================*/
 
-.order{
-    padding:110px 8%;
-    background:#ffffff;
+.order {
+    padding: 110px 8%;
+    background: #ffffff;
 }
 
-.order-heading{
-    text-align:center;
-    margin-bottom:70px;
+.order-heading {
+    text-align: center;
+    margin-bottom: 70px;
 }
 
-.order-heading span{
-    color:#c58a76;
-    font-size:14px;
-    font-weight:600;
-    letter-spacing:3px;
-    text-transform:uppercase;
+.order-heading span {
+    color: #c58a76;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-.order-heading h2{
-    margin:18px 0;
-    font-size:58px;
-    font-family:"Cormorant Garamond", serif;
-    color:#1f1f1f;
+.order-heading h2 {
+    margin: 18px 0;
+    font-size: 58px;
+    font-family: "Cormorant Garamond", serif;
+    color: #1f1f1f;
 }
 
-.order-heading p{
-    max-width:650px;
-    margin:auto;
-    font-size:17px;
-    line-height:1.8;
-    color:#666;
+.order-heading p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #666;
 }
 
 /*=====================================
         CONTAINER
 =====================================*/
 
-.order-container{
+.order-container {
 
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:35px;
-    margin-top:70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin-top: 70px;
 
 }
 
@@ -52,29 +52,29 @@
         CARD
 =====================================*/
 
-.order-card{
+.order-card {
 
-    background:#fff;
+    background: #fff;
 
-    border-radius:24px;
+    border-radius: 24px;
 
-    padding:45px 35px;
+    padding: 45px 35px;
 
-    text-align:center;
+    text-align: center;
 
-    border:1px solid #f2e8e4;
+    border: 1px solid #f2e8e4;
 
-    box-shadow:0 12px 35px rgba(0,0,0,.05);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .05);
 
-    transition:.35s ease;
+    transition: .35s ease;
 
-    position:relative;
+    position: relative;
 
 }
 
-.order-card:hover{
+.order-card:hover {
 
-    box-shadow:0 22px 45px rgba(156, 87, 3, 0.1);
+    box-shadow: 0 22px 45px rgba(156, 87, 3, 0.1);
 
 }
 
@@ -82,33 +82,33 @@
         STEP NUMBER
 =====================================*/
 
-.number{
+.number {
 
-    width:38px;
+    width: 38px;
 
-    height:38px;
+    height: 38px;
 
-    margin:0 auto 18px;
+    margin: 0 auto 18px;
 
-    border-radius:50%;
+    border-radius: 50%;
 
-    background:#c58a76;
+    background: #c58a76;
 
-    color:#fff;
+    color: #fff;
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
+    align-items: center;
 
-    font-size:15px;
+    font-size: 15px;
 
-    font-weight:600;
+    font-weight: 600;
 
-    letter-spacing:1px;
+    letter-spacing: 1px;
 
-    box-shadow:0 8px 20px rgba(197,138,118,.25);
+    box-shadow: 0 8px 20px rgba(197, 138, 118, .25);
 
 }
 
@@ -118,49 +118,49 @@
         ICON
 =====================================*/
 
-.order-icon{
+.order-icon {
 
-    width:90px;
+    width: 90px;
 
-    height:90px;
+    height: 90px;
 
-    margin:0 auto 28px;
+    margin: 0 auto 28px;
 
-    border-radius:50%;
+    border-radius: 50%;
 
-    background:#f9efea;
+    background: #f9efea;
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
+    align-items: center;
 
-    transition:.35s ease;
-
-}
-
-.order-icon svg{
-
-    width:38px;
-
-    height:38px;
-
-    color:#c58a76;
-
-    transition:.35s ease;
+    transition: .35s ease;
 
 }
 
-.order-card:hover .order-icon{
+.order-icon svg {
 
-    background:#c58a76;
+    width: 38px;
+
+    height: 38px;
+
+    color: #c58a76;
+
+    transition: .35s ease;
 
 }
 
-.order-card:hover .order-icon svg{
+.order-card:hover .order-icon {
 
-    color:#fff;
+    background: #c58a76;
+
+}
+
+.order-card:hover .order-icon svg {
+
+    color: #fff;
 
 }
 
@@ -168,23 +168,23 @@
         HEADING
 =====================================*/
 
-.order-card h3{
+.order-card h3 {
 
-    font-size:34px;
+    font-size: 34px;
 
-    font-family:"Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond", serif;
 
-    color:#1f1f1f;
+    color: #1f1f1f;
 
-    margin-bottom:15px;
+    margin-bottom: 15px;
 
-    transition:.3s;
+    transition: .3s;
 
 }
 
-.order-card:hover h3{
+.order-card:hover h3 {
 
-    color:#c58a76;
+    color: #c58a76;
 
 }
 
@@ -192,27 +192,27 @@
         SMALL ACCENT LINE
 =====================================*/
 
-.order-card h3::after{
+.order-card h3::after {
 
-    content:"";
+    content: "";
 
-    display:block;
+    display: block;
 
-    width:40px;
+    width: 40px;
 
-    height:2px;
+    height: 2px;
 
-    background:#c58a76;
+    background: #c58a76;
 
-    margin:14px auto 18px;
+    margin: 14px auto 18px;
 
-    transition:.35s;
+    transition: .35s;
 
 }
 
-.order-card:hover h3::after{
+.order-card:hover h3::after {
 
-    width:70px;
+    width: 70px;
 
 }
 
@@ -220,13 +220,13 @@
         PARAGRAPH
 =====================================*/
 
-.order-card p{
+.order-card p {
 
-    color:#666;
+    color: #666;
 
-    font-size:15px;
+    font-size: 15px;
 
-    line-height:1.9;
+    line-height: 1.9;
 
 }
 
@@ -234,55 +234,63 @@
         RESPONSIVE
 =====================================*/
 
-@media(max-width:1100px){
+@media(max-width:1100px) {
 
-.order-container{
+    .order-container {
 
-grid-template-columns:repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
 
-}
-
-}
-
-@media(max-width:768px){
-
-.order{
-
-padding:90px 6%;
+    }
 
 }
 
-.order-heading h2{
+@media(max-width:768px) {
 
-font-size:42px;
+    .order {
 
-}
+        padding: 90px 6%;
 
-.order-container{
+    }
 
-grid-template-columns:1fr;
+    .order-heading h2 {
 
-gap:25px;
+        font-size: 42px;
 
-}
+    }
 
-.order-card{
+    .order-container {
 
-padding:40px 28px;
+        grid-template-columns: 1fr;
 
-}
+        gap: 25px;
 
-.number{
+    }
 
-font-size:54px;
+    .order-card {
 
-}
+        padding: 40px 28px;
 
-.order-icon{
+    }
 
-width:80px;
-height:80px;
+    .number {
 
-}
+        font-size: 54px;
+
+    }
+
+    .order-icon {
+
+        width: 80px;
+        height: 80px;
+
+    }
+
+    .number {
+        width: 34px;
+        height: 34px;
+        margin-bottom: 14px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
 
 }
