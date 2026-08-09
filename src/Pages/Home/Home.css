@@ -543,12 +543,7 @@
     }
 
     .scroll-down {
-        position: static;
-        transform: none;
-        text-align: center;
-        margin: 0 auto 35px;
-        font-size: 13px;
-        letter-spacing: 1.5px;
+        display: none;
     }
 
 }
@@ -574,4 +569,7 @@
 
     }
 
+    .scroll-down {
+        display: none;
+    }
 }
