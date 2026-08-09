@@ -22,7 +22,7 @@ const CTA = () => {
           </p>
 
           <div className="cta-buttons">
-            <a href="https://wa.me/8054304223" className="whatsapp-btn">
+            <a href="https://wa.me/+918054304223" className="whatsapp-btn">
               <MessageCircle size={20} />
               Chat on WhatsApp
             </a>

@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="footer-contact">
           <h4>Contact</h4>
 
-          <p>📍 Gurdaspur, Punjab</p>
+          {/* <p>📍 Gurdaspur, Punjab</p> */}
 
           <p>📞 +91 8054304223</p>
 
@@ -62,7 +62,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://wa.me/8054304223"
+              href="https://wa.me/+918054304223"
               target="_blank"
               rel="noopener noreferrer"
             >
