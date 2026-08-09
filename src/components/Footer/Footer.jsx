@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="footer-contact">
           <h4>Contact</h4>
 
-          {/* <p>📍 Gurdaspur, Punjab</p> */}
+          <p>📍 No.one boutique, Shivala mandir, Meshi market Near Amambara Bazar Gurdaspur, Punjab</p>
 
           <p>📞 +91 8054304223</p>
 
