@@ -3,7 +3,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { useState, useEffect } from "react";
 import "./Navbar.css";
 
-import logo from "../../assets/images/libas_logo.jpg";
+import logo from "../../assets/Images/libas_logo.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
