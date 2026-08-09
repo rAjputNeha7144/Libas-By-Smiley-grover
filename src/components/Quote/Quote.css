@@ -1,0 +1,38 @@
+.quote{
+    padding:100px 8%;
+    background:#f8f2ee;
+    text-align:center;
+}
+
+.quote span{
+    color:#c58a76;
+    letter-spacing:3px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.quote h2{
+    margin:25px auto;
+    max-width:900px;
+    font-size:58px;
+    line-height:1.25;
+    font-family:"Cormorant Garamond", serif;
+    color:#1f1f1f;
+    font-style:italic;
+}
+
+.quote p{
+    color:#666;
+    font-size:17px;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+.quote h2{
+
+font-size:38px;
+
+}
+
+}

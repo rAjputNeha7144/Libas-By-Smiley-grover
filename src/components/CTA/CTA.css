@@ -1,0 +1,303 @@
+/*=====================================
+            CTA SECTION
+=====================================*/
+
+.cta{
+
+    padding:90px 8%;
+
+    background:#fdf8f5;
+
+}
+
+.cta-container{
+    background:#232b4b;
+    border-radius:35px;
+    padding:65px 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Decorative Circle */
+
+.cta-container::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:380px;
+
+    height:380px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:50%;
+
+    top:-180px;
+
+    right:-120px;
+
+}
+
+/*=====================================
+        LEFT
+=====================================*/
+
+.cta-left{
+    flex:1;
+    max-width:620px;
+    z-index:2;
+}
+
+.cta-left span{
+    color:#c58a76;
+    letter-spacing:3px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.cta-left h2{
+    font-size:58px;
+    line-height:1.08;
+    color:#fff;
+    font-family:"Cormorant Garamond",serif;
+    margin:15px 0 25px;
+}
+
+.cta-left p{
+    color:#d7d7d7;
+    line-height:1.9;
+    font-size:17px;
+    max-width:520px;
+    margin-bottom:35px;
+}
+
+/*=====================================
+        BUTTONS
+=====================================*/
+
+.cta-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.cta-buttons a{
+
+    text-decoration:none;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:16px 30px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.whatsapp-btn{
+
+    background:#c58a76;
+
+    color:white;
+
+}
+
+.instagram-btn{
+
+    border:1px solid rgba(255,255,255,.25);
+
+    color:white;
+
+}
+
+.whatsapp-btn:hover{
+
+    background:#ffffff;
+
+    color:#1f2948;
+
+}
+
+.instagram-btn:hover{
+
+    background:white;
+
+    color:#1f2948;
+
+}
+
+/*=====================================
+        RIGHT
+=====================================*/
+
+.cta-right{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.cta-circle{
+
+    width:230px;
+    height:230px;
+
+    border-radius:50%;
+
+    background:white;
+
+    border:8px solid rgba(197,138,118,.15);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+
+.cta-circle:hover{
+
+    transform:rotate(6deg) scale(1.03);
+
+}
+
+.cta-circle h2{
+
+    font-size:30px;
+
+    letter-spacing:5px;
+
+    color:#c58a76;
+
+    margin:8px 0;
+
+    font-family:"Cormorant Garamond",serif;
+
+}
+
+.cta-circle h3{
+
+    font-size:14px;
+
+    letter-spacing:5px;
+
+    color:#666;
+
+    font-weight:500;
+
+}
+
+.cta-circle p{
+
+    font-size:13px;
+
+    color:#777;
+
+    letter-spacing:3px;
+
+    margin-top:8px;
+
+    text-transform:uppercase;
+
+}
+
+.seal-line{
+
+    width:55px;
+
+    height:2px;
+
+    background:#c58a76;
+
+    opacity:.7;
+
+    margin:8px 0;
+
+}
+
+/*=====================================
+        RESPONSIVE
+=====================================*/
+
+@media(max-width:992px){
+
+.cta-container{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.cta-left p{
+
+margin:auto auto 35px;
+
+}
+
+.cta-buttons{
+
+justify-content:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.cta{
+
+padding:80px 6%;
+
+}
+
+.cta-container{
+
+padding:45px 30px;
+
+}
+
+.cta-left h2{
+
+font-size:42px;
+
+}
+
+.cta-circle{
+
+width:210px;
+height:210px;
+
+}
+
+.cta-circle h2{
+
+font-size:54px;
+
+}
+
+}

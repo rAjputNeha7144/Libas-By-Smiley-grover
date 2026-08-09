@@ -1,0 +1,172 @@
+/*====================================
+        WHY CHOOSE SECTION
+====================================*/
+
+.why {
+  padding: 110px 8%;
+  background: linear-gradient(to bottom, #fdf8f5, #ffffff);
+}
+
+.why-heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.why-heading span {
+  display: inline-block;
+  color: #c58a76;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.why-heading h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 58px;
+  color: #1f1f1f;
+  margin-bottom: 20px;
+}
+
+.why-heading p {
+  max-width: 650px;
+  margin: auto;
+  color: #666;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/*====================================
+            GRID
+====================================*/
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+/*====================================
+            CARD
+====================================*/
+
+.why-card {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+  cursor: pointer;
+  border: 1px solid #f2e7e2;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+/* Decorative corner */
+
+.why-card::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: rgba(197, 138, 118, 0.08);
+  border-radius: 50%;
+  top: -90px;
+  right: -90px;
+  transition: .4s;
+}
+
+.why-card:hover::before {
+  transform: scale(1.3);
+}
+
+.why-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 55px rgba(0,0,0,.12);
+}
+
+/*====================================
+            ICON
+====================================*/
+
+.why-icon{
+    width:70px;
+    height:70px;
+    background:#f7ece7;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:25px;
+    transition:.35s;
+}
+
+.why-icon svg{
+    width:34px;
+    height:34px;
+    color:#c58a76;
+}
+
+.why-card:hover .why-icon{
+    background:#c58a76;
+    transform:rotate(-8deg);
+}
+
+.why-card:hover .why-icon svg{
+    color:white;
+}
+
+/*====================================
+            TEXT
+====================================*/
+
+.why-card h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #1f1f1f;
+  transition: .3s;
+}
+
+.why-card:hover h3 {
+  color: #c58a76;
+}
+
+.why-card p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/*====================================
+        RESPONSIVE
+====================================*/
+
+@media (max-width: 992px) {
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-heading h2 {
+    font-size: 46px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .why {
+    padding: 80px 6%;
+  }
+
+  .why-card {
+    padding: 30px;
+  }
+
+  .why-heading h2 {
+    font-size: 38px;
+  }
+
+}
