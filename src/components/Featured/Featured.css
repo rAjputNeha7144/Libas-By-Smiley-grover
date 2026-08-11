@@ -1,234 +1,447 @@
-/*====================================
-        FEATURED SECTION
-====================================*/
 
-.featured{
-    padding:110px 8%;
-    background:#ffffff;
+/*====================================*
+* FEATURED SECTION
+*====================================*/
+
+.featured {
+    padding: 110px 8%;
+    background: #ffffff;
 }
 
-.featured-heading{
-    text-align:center;
-    margin-bottom:70px;
+.featured-heading {
+    text-align: center;
+    margin-bottom: 70px;
 }
 
-.featured-heading span{
-    color:#c58a76;
-    font-size:14px;
-    font-weight:600;
-    letter-spacing:3px;
-    text-transform:uppercase;
+.featured-heading span {
+    color: #c58a76;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-.featured-heading h2{
-    margin:15px 0;
-    font-size:56px;
-    font-family:"Cormorant Garamond", serif;
-    color:#1f1f1f;
+.featured-heading h2 {
+    margin: 15px 0;
+    font-size: 56px;
+    font-family: "Cormorant Garamond", serif;
+    color: #1f1f1f;
 }
 
-.featured-heading p{
-    max-width:650px;
-    margin:auto;
-    color:#666;
-    font-size:17px;
-    line-height:1.8;
+.featured-heading p {
+    max-width: 650px;
+    margin: auto;
+    color: #666;
+    font-size: 17px;
+    line-height: 1.8;
 }
 
-/*====================================
-        HORIZONTAL SCROLL
-====================================*/
 
-.featured-wrapper{
+/*====================================*
+* HORIZONTAL SCROLL
+*====================================*/
 
-    display:flex;
-    gap:30px;
-    overflow-x:auto;
-    scroll-behavior:smooth;
-    padding-bottom:15px;
-
+.featured-wrapper {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 5px 25px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
 }
 
-.featured-wrapper::-webkit-scrollbar{
-    display:none;
+.featured-wrapper::-webkit-scrollbar {
+    display: none;
 }
 
-/*====================================
-        CARD
-====================================*/
 
-.featured-card{
+/*====================================*
+* CARD
+*====================================*/
 
-    min-width:360px;
-    height:520px;
+.featured-card {
+    width: 360px;
+    min-width: 360px;
+    height: 520px;
 
-    position:relative;
+    position: relative;
 
-    overflow:hidden;
+    overflow: hidden;
 
-    border-radius:24px;
+    border-radius: 24px;
 
-    flex-shrink:0;
+    flex-shrink: 0;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    box-shadow:0 20px 45px rgba(0,0,0,.08);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .08);
 
-    transition:.45s;
-
+    transition: .45s ease;
 }
 
-.featured-card:hover{
-    box-shadow:0 25px 45px rgba(0,0,0,.12);
+.featured-card:hover {
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .12);
 }
 
-.featured-card img{
 
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:top;
+/*====================================*
+* IMAGE
+*====================================*/
 
-    transition:.6s;
+.featured-card img {
+    width: 100%;
+    height: 100%;
 
+    object-fit: cover;
+    object-position: top;
+
+    display: block;
+
+    transition: .6s ease;
 }
 
-.featured-card:hover img{
-
-    transform:scale(1.03);
-
+.featured-card:hover img {
+    transform: scale(1.03);
 }
 
-/*====================================
-        OVERLAY
-====================================*/
 
-.featured-overlay{
+/*====================================*
+* OVERLAY
+*====================================*/
 
-    position:absolute;
+.featured-overlay {
+    position: absolute;
 
-    inset:0;
+    inset: 0;
 
-    display:flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
-    flex-direction:column;
+    padding: 35px;
 
-    justify-content:flex-end;
-
-    padding:35px;
-
-    background:linear-gradient(
-    to top,
-    rgba(0,0,0,.88),
-    rgba(0,0,0,.15),
-    transparent
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, .88),
+        rgba(0, 0, 0, .15),
+        transparent
     );
 
-    color:#fff;
+    color: #fff;
+}
+
+
+/*====================================*
+* CATEGORY
+*====================================*/
+
+.featured-overlay span {
+    align-self: flex-start;
+
+    padding: 8px 18px;
+
+    background: rgba(255, 255, 255, .15);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+
+/*====================================*
+* TITLE
+*====================================*/
+
+.featured-overlay h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 34px;
+
+    line-height: 1.15;
+
+    margin-bottom: 12px;
+}
+
+
+/*====================================*
+* DESCRIPTION
+*====================================*/
+
+.featured-overlay p {
+    color: #efefef;
+
+    line-height: 1.7;
+
+    margin-bottom: 28px;
+
+    max-width: 300px;
+}
+
+
+/*====================================*
+* BUTTON
+*====================================*/
+
+.featured-overlay button {
+    width: fit-content;
+
+    padding: 14px 30px;
+
+    border: none;
+
+    border-radius: 40px;
+
+    background: white;
+
+    color: #1f2948;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .35s ease;
+}
+
+.featured-overlay button:hover {
+    background: #c58a76;
+
+    color: white;
+
+    transform: translateX(6px);
+}
+
+
+/*====================================*
+* TABLET
+*====================================*/
+
+@media (max-width: 1024px) {
+
+    .featured {
+        padding: 90px 6%;
+    }
+
+    .featured-heading {
+        margin-bottom: 55px;
+    }
+
+    .featured-heading h2 {
+        font-size: 48px;
+    }
+
+    .featured-heading p {
+        font-size: 16px;
+    }
+
+    .featured-wrapper {
+        gap: 24px;
+    }
+
+    .featured-card {
+        width: 330px;
+        min-width: 330px;
+        height: 480px;
+    }
 
 }
 
-/*====================================
-        CATEGORY
-====================================*/
 
-.featured-overlay span{
+/*====================================*
+* MOBILE
+*====================================*/
 
-    align-self:flex-start;
+@media (max-width: 768px) {
 
-    padding:8px 18px;
+    .featured {
+        padding: 75px 5%;
+    }
 
-    background:rgba(255,255,255,.15);
+    .featured-heading {
+        margin-bottom: 40px;
+    }
 
-    backdrop-filter:blur(10px);
+    .featured-heading span {
+        font-size: 12px;
+        letter-spacing: 2.5px;
+    }
 
-    border-radius:30px;
+    .featured-heading h2 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 12px 0;
+    }
 
-    font-size:12px;
+    .featured-heading p {
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 500px;
+    }
 
-    letter-spacing:2px;
+    .featured-wrapper {
+        gap: 18px;
 
-    margin-bottom:18px;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-bottom: 15px;
+    }
+
+    .featured-card {
+        width: calc(100vw - 12vw);
+        min-width: calc(100vw - 12vw);
+
+        height: auto;
+
+        aspect-ratio: 3 / 4;
+
+        border-radius: 20px;
+    }
+
+    .featured-card img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: top;
+
+        transform: none;
+    }
+
+    .featured-card:hover img {
+        transform: none;
+    }
+
+    .featured-overlay {
+        padding: 25px;
+    }
+
+    .featured-overlay span {
+        padding: 7px 14px;
+
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+
+        margin-bottom: 14px;
+    }
+
+    .featured-overlay h3 {
+        font-size: 29px;
+
+        margin-bottom: 10px;
+    }
+
+    .featured-overlay p {
+        font-size: 14px;
+
+        line-height: 1.6;
+
+        margin-bottom: 20px;
+
+        max-width: 100%;
+    }
+
+    .featured-overlay button {
+        padding: 12px 24px;
+
+        font-size: 14px;
+    }
 
 }
 
-/*====================================
-        TITLE
-====================================*/
 
-.featured-overlay h3{
+/*====================================*
+* SMALL MOBILE
+*====================================*/
 
-    font-family:"Cormorant Garamond", serif;
+@media (max-width: 480px) {
 
-    font-size:34px;
+    .featured {
+        padding: 65px 5%;
+    }
 
-    margin-bottom:12px;
+    .featured-heading h2 {
+        font-size: 36px;
+    }
 
-}
+    .featured-heading p {
+        font-size: 14px;
+    }
 
-.featured-overlay p{
+    .featured-wrapper {
+        gap: 15px;
+    }
 
-    color:#efefef;
+    .featured-card {
+        width: 88vw;
+        min-width: 88vw;
 
-    line-height:1.7;
+        aspect-ratio: 3 / 4;
 
-    margin-bottom:28px;
+        border-radius: 18px;
+    }
 
-}
+    .featured-overlay {
+        padding: 22px;
+    }
 
-/*====================================
-        BUTTON
-====================================*/
+    .featured-overlay h3 {
+        font-size: 27px;
+    }
 
-.featured-overlay button{
+    .featured-overlay p {
+        font-size: 13px;
 
-    width:fit-content;
+        line-height: 1.55;
 
-    padding:14px 30px;
+        margin-bottom: 18px;
+    }
 
-    border:none;
+    .featured-overlay button {
+        padding: 11px 22px;
 
-    border-radius:40px;
-
-    background:white;
-
-    color:#1f2948;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.35s;
-
-}
-
-.featured-overlay button:hover{
-
-    background:#c58a76;
-
-    color:white;
-
-    transform:translateX(6px);
+        font-size: 13px;
+    }
 
 }
 
-/*====================================
-        RESPONSIVE
-====================================*/
 
-@media(max-width:768px){
+/*====================================*
+* VERY SMALL DEVICES
+*====================================*/
 
-.featured-card{
+@media (max-width: 360px) {
 
-min-width:300px;
-height:440px;
+    .featured {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
 
-}
+    .featured-heading h2 {
+        font-size: 32px;
+    }
 
-.featured-heading h2{
+    .featured-card {
+        width: 90vw;
+        min-width: 90vw;
+    }
 
-font-size:42px;
+    .featured-overlay {
+        padding: 18px;
+    }
 
-}
+    .featured-overlay h3 {
+        font-size: 24px;
+    }
+
+    .featured-overlay p {
+        font-size: 12px;
+    }
 
 }
